@@ -1,0 +1,22 @@
+{% extends 'home/new_layout.html' %}
+{% block body %}
+<h3> Welcome to sign up page </h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}" type="text/css">
+<center>
+    <form action="/login" method="post">
+        <input type="text" name="email" id="inputEmail" placeholder="enter email address" required autofocus autocomplete="on">
+        <!--<br>-->
+        <input type="password" name="password" id="inputPassword" placeholder="enter password" required>
+        <br>
+        <br>
+        <label><input type="checkbox" value="remember-me" > Remember me</label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</center>
+{% endblock %}
