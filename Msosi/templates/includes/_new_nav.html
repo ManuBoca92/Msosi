@@ -1,23 +1,15 @@
 {% block body%}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ url_for('static', filename='nav_style.css') }}" type="text/css">
-    <link rel="shortcut icon" href="favicon/favicon.ico">
-    <link rel="icon" type="image/gif" href="favicon/animated_favicon1.gif.gif">
-    <title>Msosi</title>
-</head>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <body>
-    <nav>
+
+            <a href="/"><img id="logo" src="{{url_for('static', filename='img/msosi_logo.png')}}"></a>
+            <!--<li><a href="/"> Home</a></li>-->
         <ul>
-            <li><a href="/home"> Home</a></li>
-            <li><a href="/home"> About Us</a></li>
-            <li><a href="/home"> Contact Us</a></li>
-            <li><a class="nav-right" href="{{ url_for('home.registration_page') }}"> Sign Up</a></li>
-            <li><a class="nav-right" href="{{ url_for('home.login') }}"> Login</a></li>
+            <li><a href="/"> About Us</a></li>
+            <li><a href="/"> Contact Us</a></li>
+            <!--<li><a class="nav-right" href="{{ url_for('home.registration_page') }}"> Sign Up</a></li>-->
+            <!--<li><a class="nav-right" href="{{ url_for('home.login') }}"> Login</a></li>-->
         </ul>
-    </nav>
 
 </body>
 </html>

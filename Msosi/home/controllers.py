@@ -17,10 +17,9 @@ login_manager.login_view = 'login'
 def load_user(user_id):
     return UserRegistration.objects(pk=user_id).first()
 
-@home.route('')
-def index():
+@home.route('/')
+def home_page():
     return render_template('home/new_home.html')
-
 
 @home.route('/register', methods=['GET','POST'])
 def registration_page():

@@ -1,6 +1,13 @@
 html{
-    background-image: url("cook-food-kitchen-eat-54455.jpeg");
+    background-image: url("img/msosi_background.jpg");
+    background-size: 1920px auto;
     font-family: Baskerville;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 250px;
+    display: block;
+    overflow: hidden;
 }
 
 body{
@@ -9,14 +16,27 @@ body{
 
 li{
     display: inline;
+    text-align: center;
+    margin: 0 auto;
 }
 
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: inline;
+    list-style: none;
 }
 
 .nav-right{
     float: right;
+}
+
+li:hover {
+  background: #fff;
+}
+
+#logo {
+  height: 100px;
+  vertical-align: middle;
 }
