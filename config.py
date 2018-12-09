@@ -1,6 +1,6 @@
 MONGODB_SETTINGS ={
-    'db' : 'Msosi',
-    'host' : 'localhost'
+    'db': 'Msosi',
+    'host': 'localhost'
 }
 
 DEBUG = False
