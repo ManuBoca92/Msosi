@@ -1,4 +1,4 @@
-from Msosi import app
+from Application import app
 
 
 app.run()

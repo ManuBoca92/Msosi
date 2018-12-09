@@ -1,5 +1,5 @@
 MONGODB_SETTINGS ={
-    'db' : 'Msosi',
+    'db' : 'Application',
     'host' : 'localhost'
 }
 
