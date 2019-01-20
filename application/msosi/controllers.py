@@ -24,7 +24,7 @@ def home_page():
     return render_template('msosi/new_home.html')
 
 
-@home.route('/register', methods=['GET','POST'])
+@home.route('/register', methods=['GET', 'POST'])
 def registration_page():
     """ Enables new user registration."""
     user_data = request.form
@@ -43,11 +43,7 @@ def registration_page():
 
 @home.route('/login', methods=['GET', 'POST'])
 def login():
-    """
-
-    Returns: Returns logged in user to dashboard.
-
-    """
+    """ Returns: Returns logged in user to dashboard. """
     if current_user.is_authenticated:
         return redirect(url_for('dashboard'))
     user_data = request.form

@@ -1,0 +1,16 @@
+{% block body%}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<body>
+
+<a href="/"><img id="logo" src="{{url_for('static', filename='img/msosi_logo.png')}}"></a>
+<!--<li><a href="/"> Home</a></li>-->
+<ul>
+    <li><a href="/"> ABOUT US</a></li>
+    <li><a href="/"> CONTACT</a></li>
+    <!--<li><a class="nav-right" href="{{ url_for('msosi.registration_page') }}"> Sign Up</a></li>-->
+    <!--<li><a class="nav-right" href="{{ url_for('msosi.login') }}"> Login</a></li>-->
+</ul>
+
+</body>
+</html>
+{% endblock %}

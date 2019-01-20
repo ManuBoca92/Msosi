@@ -1,0 +1,157 @@
+{% extends 'home/layout.html' %}
+{% set active_page = 'orders' %}
+
+{% block body %}
+<div class="table-responsive">
+  <table class="table table-hover table-bordered" aria-checked="true" style="width:100%" >
+    <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Telephone</th>
+      <th scope="col">Address</th>
+      <th scope="col">Order</th>
+      <th scope="col">Notes</th>
+      <th scope="col">Total Payment $</th>
+      <th scope="col">Select</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark Books</td>
+      <td> +123456789</td>
+      <td>Yaounde street 1, P.O.Box 4567</td>
+      <td>Hot wings and fries</td>
+      <td>Hot too spicy</td>
+      <td>35,99</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>{{current_user.firstName}}</td>
+      <td>{{current_user.lastName}}</td>
+      <td>{{current_user.address}}</td>
+      <td>{{current_user.city}}</td>
+      <td>{{current_user.firstName}}</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark Books</td>
+      <td> +123456789</td>
+      <td>Yaounde street 1, P.O.Box 4567</td>
+      <td>Hot wings and fries</td>
+      <td>Hot too spicy</td>
+      <td>35,99</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark Books</td>
+      <td> +123456789</td>
+      <td>Yaounde street 1, P.O.Box 4567</td>
+      <td>Hot wings and fries</td>
+      <td>Hot too spicy</td>
+      <td>35,99</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark Books</td>
+      <td> +123456789</td>
+      <td>Yaounde street 1, P.O.Box 4567</td>
+      <td>Hot wings and fries</td>
+      <td>Hot too spicy</td>
+      <td>35,99</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark Books</td>
+      <td> +123456789</td>
+      <td>Yaounde street 1, P.O.Box 4567</td>
+      <td>Hot wings and fries</td>
+      <td>Hot too spicy</td>
+      <td>35,99</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark Books</td>
+      <td> +123456789</td>
+      <td>Yaounde street 1, P.O.Box 4567</td>
+      <td>Hot wings and fries</td>
+      <td>Hot too spicy</td>
+      <td>35,99</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark Books</td>
+      <td> +123456789</td>
+      <td>Yaounde street 1, P.O.Box 4567</td>
+      <td>Hot wings and fries</td>
+      <td>Hot too spicy</td>
+      <td>35,99</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark Books</td>
+      <td> +123456789</td>
+      <td>Yaounde street 1, P.O.Box 4567</td>
+      <td>Hot wings and fries</td>
+      <td>Hot too spicy</td>
+      <td>35,99</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark Books</td>
+      <td> +123456789</td>
+      <td>Yaounde street 1, P.O.Box 4567</td>
+      <td>Hot wings and fries</td>
+      <td>Hot too spicy</td>
+      <td>35,99</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark Books</td>
+      <td> +123456789</td>
+      <td>Yaounde street 1, P.O.Box 4567</td>
+      <td>Hot wings and fries</td>
+      <td>Hot too spicy</td>
+      <td>35,99</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark Books</td>
+      <td> +123456789</td>
+      <td>Yaounde street 1, P.O.Box 4567</td>
+      <td>Hot wings and fries</td>
+      <td>Hot too spicy</td>
+      <td>35,99</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active">
+        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+{% endblock %}
