@@ -21,7 +21,7 @@ def load_user(user_id):
 
 @home.route('/')
 def home_page():
-    return render_template('msosi/new_home.html')
+    return render_template('home/new_home.html')
 
 
 @home.route('/register', methods=['GET', 'POST'])
@@ -38,7 +38,7 @@ def registration_page():
             flash('You are now registered and can login in', 'success')
             return redirect(url_for('dashboard'))
 
-    return render_template('msosi/register.html', form=form)
+    return render_template('home/register.html', form=form)
 
 
 @home.route('/login', methods=['GET', 'POST'])
@@ -54,13 +54,13 @@ def login():
             if check_user['password'] == form.password.data:
                 login_user(check_user)
                 return redirect(url_for('dashboard'))
-    return render_template('msosi/login.html')
+    return render_template('home/login.html')
 
 
 @app.route('/dashboard')
 @login_required
 def dashboard():
-    return render_template('msosi/dashboard.html')
+    return render_template('home/dashboard.html')
 
 
 @app.route('/logout', methods=['GET'])
@@ -74,16 +74,16 @@ def logout():
 @app.route('/user-profile')
 @login_required
 def user_profile():
-    return render_template('msosi/user_profile.html')
+    return render_template('home/user_profile.html')
 
 
 @app.route('/menu')
 @login_required
 def menu():
-    return render_template('msosi/menu.html')
+    return render_template('home/menu.html')
 
 
 @app.route('/orders')
 @login_required
 def orders():
-    return render_template('msosi/orders.html')
+    return render_template('home/orders.html')
