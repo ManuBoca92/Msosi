@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}" type="text/css">
 <div class="container">
     <form action="/register" method="post">
-        <img id="logo" src="{{url_for('static', filename='img/msosi_logo.png')}}">
         <!--<h2 >Register here</h2>-->
         <input type="text" name="firstName" id="inputFirstname" class="form-control" placeholder="First name" required autofocus>
         <input type="text" name="lastName" id="inputLastname" class="form-control" placeholder="Last name" required autofocus>
